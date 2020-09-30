@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище LOGINModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IDROLE" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_USER_IDROLE_ROLE_ID">
+    <End Role="ROLE" Type="Self.ROLE" Multiplicity="0..1" />
+    <End Role="USER" Type="Self.USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="USER">
+        <PropertyRef Name="IDROLE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище LOGINModelContainer">
+    <EntitySet Name="ROLE" EntityType="Self.ROLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_USER_IDROLE_ROLE_ID" Association="Self.FK_USER_IDROLE_ROLE_ID">
+      <End Role="ROLE" EntitySet="ROLE" />
+      <End Role="USER" EntitySet="USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

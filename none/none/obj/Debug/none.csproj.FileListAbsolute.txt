@@ -1,0 +1,17 @@
+D:\C#-WPF\none\none\bin\Debug\none.exe.config
+D:\C#-WPF\none\none\bin\Debug\none.exe
+D:\C#-WPF\none\none\bin\Debug\none.pdb
+D:\C#-WPF\none\none\obj\Debug\none.csprojAssemblyReference.cache
+D:\C#-WPF\none\none\obj\Debug\views\pages\home\loginPage.g.cs
+D:\C#-WPF\none\none\obj\Debug\views\windows\MainWindow.g.cs
+D:\C#-WPF\none\none\obj\Debug\App.g.cs
+D:\C#-WPF\none\none\obj\Debug\none_MarkupCompile.cache
+D:\C#-WPF\none\none\obj\Debug\none_MarkupCompile.lref
+D:\C#-WPF\none\none\obj\Debug\views\pages\home\loginPage.baml
+D:\C#-WPF\none\none\obj\Debug\views\windows\MainWindow.baml
+D:\C#-WPF\none\none\obj\Debug\none.g.resources
+D:\C#-WPF\none\none\obj\Debug\none.Properties.Resources.resources
+D:\C#-WPF\none\none\obj\Debug\none.csproj.GenerateResource.cache
+D:\C#-WPF\none\none\obj\Debug\none.csproj.CoreCompileInputs.cache
+D:\C#-WPF\none\none\obj\Debug\none.exe
+D:\C#-WPF\none\none\obj\Debug\none.pdb

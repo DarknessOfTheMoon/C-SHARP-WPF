@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LOGINModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="TITLE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="USER" Relationship="Self.FK_USER_IDROLE_ROLE_ID" FromRole="ROLE" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDROLE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="ROLE" Relationship="Self.FK_USER_IDROLE_ROLE_ID" FromRole="USER" ToRole="ROLE" />
+  </EntityType>
+  <Association Name="FK_USER_IDROLE_ROLE_ID">
+    <End Role="ROLE" Type="Self.ROLE" Multiplicity="0..1" />
+    <End Role="USER" Type="Self.USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="USER">
+        <PropertyRef Name="IDROLE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LOGINEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ROLE" EntityType="Self.ROLE" />
+    <EntitySet Name="USER" EntityType="Self.USER" />
+    <AssociationSet Name="FK_USER_IDROLE_ROLE_ID" Association="Self.FK_USER_IDROLE_ROLE_ID">
+      <End Role="ROLE" EntitySet="ROLE" />
+      <End Role="USER" EntitySet="USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

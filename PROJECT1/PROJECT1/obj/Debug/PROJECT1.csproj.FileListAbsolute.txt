@@ -1,0 +1,9 @@
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\PROJECT1.csprojAssemblyReference.cache
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\Views\Pages\AdminPages\CreateAdminUser.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\Views\Pages\ViewsDataPages\ViewsDataPage.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\Views\Windows\MainWindow.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\Views\Pages\Home\LoginPage.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\App.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\PROJECT1_Content.g.cs
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\PROJECT1_MarkupCompile.cache
+D:\C#-WPF\PROJECT1\PROJECT1\obj\Debug\PROJECT1_MarkupCompile.lref
