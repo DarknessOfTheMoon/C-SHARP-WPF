@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ComputerProductsModelContainer" CdmEntityContainer="ComputerProductsEntities">
+    <EntitySetMapping Name="Computer">
+      <EntityTypeMapping TypeName="ComputerProductsModel.Computer">
+        <MappingFragment StoreEntitySet="Computer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CPU" ColumnName="CPU" />
+          <ScalarProperty Name="GPU" ColumnName="GPU" />
+          <ScalarProperty Name="PowerSupply" ColumnName="PowerSupply" />
+          <ScalarProperty Name="RAM" ColumnName="RAM" />
+          <ScalarProperty Name="Motherboard" ColumnName="Motherboard" />
+          <ScalarProperty Name="Housing" ColumnName="Housing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CountryManufacture">
+      <EntityTypeMapping TypeName="ComputerProductsModel.CountryManufacture">
+        <MappingFragment StoreEntitySet="CountryManufacture">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="ComputerProductsModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="IDComputer" ColumnName="IDComputer" />
+          <ScalarProperty Name="IDCountryManufacture" ColumnName="IDCountryManufacture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="ComputerProductsModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SignIn">
+      <EntityTypeMapping TypeName="ComputerProductsModel.SignIn">
+        <MappingFragment StoreEntitySet="SignIn">
+          <ScalarProperty Name="SignInID" ColumnName="SignInID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IDRole" ColumnName="IDRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

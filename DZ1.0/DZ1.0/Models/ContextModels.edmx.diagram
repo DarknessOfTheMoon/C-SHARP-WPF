@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b19fb3d15a4b4f6490f49b7affba727c" Name="Diagram1">
+        <EntityTypeShape EntityType="ComputerProductsModel.Computer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerProductsModel.CountryManufacture" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerProductsModel.Product" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerProductsModel.Role" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerProductsModel.SignIn" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="ComputerProductsModel.FK_Product_IDComputer_Computer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerProductsModel.FK_Product_IDCountryManufacture_CountryManufacture_CountryID" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerProductsModel.FK_SignIn_SignInID_Role_RoleID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

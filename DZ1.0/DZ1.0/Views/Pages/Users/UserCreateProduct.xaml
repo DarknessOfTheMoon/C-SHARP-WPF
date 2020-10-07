@@ -1,0 +1,91 @@
+﻿<Page x:Class="DZ1._0.Views.Pages.Users.UserCreateProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DZ1._0.Views.Pages.Users"
+      mc:Ignorable="d"  Loaded="Page_Loaded"
+      d:DesignHeight="600" d:DesignWidth="1080"
+      Title="UserCreateProduct">
+    <Grid>
+        <!-- Глобальный стэк -->
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 0, 0, 10">
+                <TextBlock Text="CPU"></TextBlock>
+                <TextBox Width="150" 
+                         Margin="137, 0, 0, 0"
+                         x:Name="txbCPU"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal"     
+                         Margin="0, 0, 0, 10">
+                <TextBlock Text="GPU"></TextBlock>
+                <TextBox Width="150" 
+                         Margin="136, 0, 0, 0"
+                         x:Name="txbGPU"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 0, 0, 10">
+                <TextBlock Text="БЛОК ПИТАНИЯ"></TextBlock>
+                <TextBox Width="150" 
+                         Margin="69, 0, 0, 0"
+                         x:Name="txbPowerSupply"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 0, 0, 10">
+                <TextBlock Text="ОЗУ"></TextBlock>
+                <TextBox Width="150"
+                         Margin="137, 0, 0, 0"
+                         x:Name="txbRAM"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 0, 0, 10">
+                <TextBlock Text="МАТЕРИНСКАЯ ПЛАТА"></TextBlock>
+                <TextBox Width="150" 
+                         Margin="33, 0, 0, 0"
+                         x:Name="txbMotherboard"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 0, 0, 10">
+                <TextBlock Text="КОРПУС"></TextBlock>
+                <TextBox Width="150" 
+                         Margin="113, 0, 0, 0"
+                         x:Name="txbHousing"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="СТРАНА ПРОИСВОДИТЕЛЬ"></TextBlock>
+                <ComboBox Width="150" 
+                          Margin="10, 0, 0, 0"
+                          x:Name="txbCountryManufacture"></ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0, 15, 0, 0">
+                <Button Width="150" 
+                        Height="25"
+                        Content="ОТМЕНА"
+                        x:Name="btnCancel"
+                        Click="btnCancel_Click"></Button>
+                <Button Width="150" 
+                        Height="25"
+                        Margin="10, 0, 0, 0"   
+                        Content="ДОБАВИТЬ"
+                        x:Name="btnAdd"
+                        Click="btnAdd_Click"></Button>
+            </StackPanel>
+            
+            
+        </StackPanel>
+
+        
+        
+    </Grid>
+</Page>
